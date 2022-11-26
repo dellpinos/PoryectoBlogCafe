@@ -1,6 +1,6 @@
 :root {
-    --fuenteHeading: font-family: 'PT Sans', sans-serif;
-    --fuenteParrafos: font-family: 'Open Sans', sans-serif;
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario: #784D3C;
     --blanco: #ffffff;
@@ -28,7 +28,7 @@ body {
     margin: 0 auto; /* centrando el contenido */
 }
 
-a{
+a {
     text-decoration: none;
 }
 h1,h2,h3,h4 {
@@ -65,4 +65,45 @@ img {
 .header {
     background-image: url(../img/banner.jpg);
     height: 60rem;
+    background-size: cover; /* Que ocupe toda la pantalla */
+    background-repeat: no-repeat; /* que no ser epita la imagen*/
+    background-position: center center; /* que parte de la imagen "queda" cuando achico la pantalla, en este caso el centro*/
+}
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between; /* centro horizontalmente*/
+        align-items: center; /* centro verticalmente*/
+    }    
+}
+.logo {
+    color: var(--blanco);
+}
+.logo__nombre {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display:flex;
+        gap: 2rem;
+    }
+}
+.navegacion__enlace {
+    display: block; /* para que esten uno bajo el otro*/
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
 }
