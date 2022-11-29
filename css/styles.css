@@ -253,9 +253,17 @@ img {
     width: 95%;
     padding: 5rem;
 }
+@media (min-width: 768px) {
+    .campo {
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+}
 .campo {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 3.5fr;
     margin-bottom: 2rem;
     gap: 2rem;
 }
