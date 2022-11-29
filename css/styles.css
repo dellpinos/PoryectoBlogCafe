@@ -144,6 +144,7 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
+    border: none;
 }
 @media (min-width: 768px) {
     .boton {
@@ -155,6 +156,9 @@ img {
 }
 .boton--secundario {
     background-color: var(--primario); /* Gracias a BEM uso todo el codigo de .boton con un modificador de background*/
+}
+.boton:hover {
+    cursor: pointer;
 }
 
 .cursos {
@@ -232,4 +236,37 @@ img {
 .curso__label,
 .curso__info {
     font-size: 2rem;
+}
+
+/** Contacto**/
+
+.contacto__background {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem; /* Si no no se ve nada, no tiene dimension ni contenido*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto; /*me sirve para encimar al formulario sobre una imagen*/
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label {
+    text-align: right;
+    
+
+}
+.campo_field {
+    border: 1px solid var(--gris);
+}
+.campo_field--textarea {
+    height: 20rem;
 }
