@@ -252,6 +252,7 @@ img {
     margin: -5rem auto 0 auto; /*me sirve para encimar al formulario sobre una imagen*/
     width: 95%;
     padding: 5rem;
+    
 }
 @media (min-width: 768px) {
     .campo {
@@ -265,16 +266,17 @@ img {
     display: grid;
     grid-template-columns: 1fr 3.5fr;
     margin-bottom: 2rem;
-    gap: 2rem;
+    gap: 2rem; 
 }
 .campo__label {
     text-align: right;
-    
-
 }
 .campo_field {
     border: 1px solid var(--gris);
 }
 .campo_field--textarea {
     height: 20rem;
+}
+.boton--formulario {
+    margin-left: 20rem;
 }
